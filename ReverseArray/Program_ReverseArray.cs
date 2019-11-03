@@ -12,23 +12,8 @@ namespace ReverseArray
 
             int[] arrOfInt = GetArrayOfIntegers(requiredArrLength);
 
-            int[] reverseArrayOfInt = GetReversedIntegers(arrOfInt);
-            Console.WriteLine("\nReversed integers (used custom reverse function): " + String.Join(" ", reverseArrayOfInt));
-
             Array.Reverse(arrOfInt);
             Console.WriteLine("Reversed integers (used built-in Array.Reverse()): " + String.Join(" ", arrOfInt));
-        }
-
-        private static int[] GetReversedIntegers(int[] arrOfInt)
-        {
-            int[] reverseArrOfInt = new int[arrOfInt.Length];
-
-            for (int i = 0, k = reverseArrOfInt.Length - 1; i < arrOfInt.Length && k >= 0; i++, k--)
-            {
-                reverseArrOfInt[k] = arrOfInt[i];
-            }
-
-            return reverseArrOfInt;
         }
 
         private static int[] GetArrayOfIntegers(int requiredArrLength)
