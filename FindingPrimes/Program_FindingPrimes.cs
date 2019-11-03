@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace FindingPrimes
 {
-    class Program
+    class Program_FindingPrimes
     {
         static void Main(string[] args)
         {

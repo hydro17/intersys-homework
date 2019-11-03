@@ -1,34 +1,40 @@
 ﻿using System;
 using System.Linq;
 
-namespace ReverseArray
+namespace Permutation
 {
-    class Program
+    class Program_Permutation
     {
         static void Main(string[] args)
         {
-            int requiredArrLength = GetArrLength();
-            Console.WriteLine();
+            Console.WriteLine("Enter the first array.");
+            int[] firstArrOf11Int = GetArrayOfIntegers(11);
 
-            int[] arrOfInt = GetArrayOfIntegers(requiredArrLength);
+            Console.WriteLine("\nEnter the second array.");
+            int[] secondArrOf11Int = GetArrayOfIntegers(11);
 
-            int[] reverseArrayOfInt = GetReversedIntegers(arrOfInt);
-            Console.WriteLine("\nReversed integers (used custom reverse function): " + String.Join(" ", reverseArrayOfInt));
+            Console.WriteLine("\n" + (AreArraysMutuallyPermutable(firstArrOf11Int, secondArrOf11Int) ? "YES" : "NO"));
 
-            Array.Reverse(arrOfInt);
-            Console.WriteLine("Reversed integers (used built-in Array.Reverse()): " + String.Join(" ", arrOfInt));
+            //numberOfElement
+            //var groupedByElementsOfFirstArray = firstArrOf11Int.GroupBy(
+            //    i => i, //key_number 
+            //    i => i, //value added to value_collectOfNumbers
+            //    (key_number, value_collectOfNumbers) => new
+            //        {
+            //            Number = key_number,
+            //            Count = value_collectOfNumbers.Count()
+            //        }
+            //    );
+
+            //foreach (var g in groupedByIntOfFirstArr)
+            //{
+            //    Console.WriteLine($"{g.Number} : {g.Count}");
+            //}
         }
 
-        private static int[] GetReversedIntegers(int[] arrOfInt)
+        private static bool AreArraysMutuallyPermutable(int[] firstArrOf11Int, int[] secondArrOf11Int)
         {
-            int[] reverseArrOfInt = new int[arrOfInt.Length];
-
-            for (int i = 0, k = reverseArrOfInt.Length - 1; i < arrOfInt.Length && k >= 0; i++, k--)
-            {
-                reverseArrOfInt[k] = arrOfInt[i];
-            }
-
-            return reverseArrOfInt;
+            return firstArrOf11Int.OrderBy(i => i).SequenceEqual(secondArrOf11Int.OrderBy(i => i));
         }
 
         private static int[] GetArrayOfIntegers(int requiredArrLength)
@@ -71,25 +77,6 @@ namespace ReverseArray
             } while (!isArrOfIntOk);
 
             return arrOfInt;
-        }
-
-        private static int GetArrLength()
-        {
-            int arrLength;
-            bool isInteger;
-
-            do
-            {
-                Console.Write("Enter array length: ");
-                isInteger = int.TryParse(Console.ReadLine(), out arrLength);
-                if (!isInteger)
-                {
-                    Console.WriteLine("\nArray length has to be an integer.");
-                }
-
-            } while (!isInteger);
-
-            return arrLength;
         }
     }
 }

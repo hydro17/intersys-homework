@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace ExistingPowersOf2
 {
-    class Program
+    class Program_ExistingPowersOf2
     {
         static void Main(string[] args)
         {

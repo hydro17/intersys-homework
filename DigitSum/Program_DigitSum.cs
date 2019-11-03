@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace DigitSum
 {
-    class Program
+    class Program_DigitSum
     {
         static void Main(string[] args)
         {

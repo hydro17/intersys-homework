@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace Palindrome
 {
-    class Program
+    class Program_Palindrome
     {
         static void Main(string[] args)
         {

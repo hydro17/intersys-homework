@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace CommonDigit
 {
-    class Program
+    class Program_CommonDigit
     {
         static void Main(string[] args)
         {
