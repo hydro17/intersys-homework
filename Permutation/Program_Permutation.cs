@@ -14,22 +14,6 @@ namespace Permutation
             int[] secondArrOf11Int = GetArrayOfIntegers(11);
 
             Console.WriteLine("\n" + (AreArraysMutuallyPermutable(firstArrOf11Int, secondArrOf11Int) ? "YES" : "NO"));
-
-            //numberOfElement
-            //var groupedByElementsOfFirstArray = firstArrOf11Int.GroupBy(
-            //    i => i, //key_number 
-            //    i => i, //value added to value_collectOfNumbers
-            //    (key_number, value_collectOfNumbers) => new
-            //        {
-            //            Number = key_number,
-            //            Count = value_collectOfNumbers.Count()
-            //        }
-            //    );
-
-            //foreach (var g in groupedByIntOfFirstArr)
-            //{
-            //    Console.WriteLine($"{g.Number} : {g.Count}");
-            //}
         }
 
         private static bool AreArraysMutuallyPermutable(int[] firstArrOf11Int, int[] secondArrOf11Int)
