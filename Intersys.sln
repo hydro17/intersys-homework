@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitSum", "DigitSum\DigitS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseArray", "ReverseArray\ReverseArray.csproj", "{14F78306-7673-4697-B628-CFB024FDE30E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExistingPowersOf2", "ExistingPowersOf2\ExistingPowersOf2.csproj", "{2EAC1374-F113-4B6B-B710-376546F1DF83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{14F78306-7673-4697-B628-CFB024FDE30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14F78306-7673-4697-B628-CFB024FDE30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14F78306-7673-4697-B628-CFB024FDE30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EAC1374-F113-4B6B-B710-376546F1DF83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAC1374-F113-4B6B-B710-376546F1DF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAC1374-F113-4B6B-B710-376546F1DF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAC1374-F113-4B6B-B710-376546F1DF83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
