@@ -12,14 +12,14 @@ namespace CommonDigit
 
             int[] arrOfInt = GetArrayOfIntegers(requiredArrLength);
 
-            string arrOfIntAsStringOfDigits = getOnlyDigits(String.Join("", arrOfInt));
-
-            Console.WriteLine($"Most occuring digit is {GetMostOccuringDigit(arrOfIntAsStringOfDigits)}");
+            Console.WriteLine($"Most occuring digit is {GetMostOccuringDigit(arrOfInt)}");
         }
 
-        private static int GetMostOccuringDigit(string digits)
+        private static int GetMostOccuringDigit(int[] arrOfInt)
         {
-            char[] arrOfDigits = digits.ToCharArray();
+            string arrOfIntAsStringOfDigits = getOnlyDigits(String.Join("", arrOfInt));
+
+            char[] arrOfDigits = arrOfIntAsStringOfDigits.ToCharArray();
 
             var countOfOccurrencesOfDigits = arrOfDigits.GroupBy(
                 key_digit => key_digit, 
