@@ -7,7 +7,7 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a string: ");
+            //Console.Write("Enter a string: ");
             string possiblePalindrome = Console.ReadLine();
 
             string onlyLettersPossiblePalindrome = getOnlyLetters(possiblePalindrome);

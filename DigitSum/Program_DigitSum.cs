@@ -7,7 +7,6 @@ namespace DigitSum
     {
         static void Main(string[] args)
         {
-            //TODO: add to email as a question - readability
             int requiredArrLength = GetArrayLength();
             int[] arrOfPositiveInt = GetArrayOfPositiveIntegers(requiredArrLength);
 
@@ -30,7 +29,6 @@ namespace DigitSum
 
             int maxSumOfDigits = numbersAndSumOfDigits.Max(number => number.SumOfDigits);
 
-            //TODO: add to email as a question - a better way of returning a final value
             int highestNumberWithMaxSumOfDigits = numbersAndSumOfDigits
                 .Where(number => number.SumOfDigits == maxSumOfDigits)
                 .Max(number => number.Number);
@@ -40,7 +38,6 @@ namespace DigitSum
 
         private static int SumOfDigitsOfPositiveNumber(int positiveNumber)
         {
-            //TODO: add to email as a question - the KISS rule
             char[] digitsAsChars = positiveNumber.ToString().ToCharArray();
 
             int sumOfDigits = 0;
@@ -67,7 +64,7 @@ namespace DigitSum
 
             do
             {
-                Console.Write($"Enter {requiredArrLength} positive integers separated by spaces: ");
+                //Console.Write($"Enter {requiredArrLength} positive integers separated by spaces: ");
 
                 try
                 {
@@ -133,7 +130,7 @@ namespace DigitSum
 
             do
             {
-                Console.Write("Enter array length: ");
+                //Console.Write("Enter array length: ");
                 isInteger = int.TryParse(Console.ReadLine(), out arrLength);
 
                 if (!isInteger)

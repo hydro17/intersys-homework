@@ -7,10 +7,10 @@ namespace Permutation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the first array.");
+            //Console.WriteLine("Enter the first array.");
             int[] firstArrOf11Int = GetArrayOfIntegers(11);
 
-            Console.WriteLine("\nEnter the second array.");
+            //Console.WriteLine("\nEnter the second array.");
             int[] secondArrOf11Int = GetArrayOfIntegers(11);
 
             Console.WriteLine("\n" + (AreArraysMutuallyPermutable(firstArrOf11Int, secondArrOf11Int) ? "YES" : "NO"));
@@ -28,7 +28,7 @@ namespace Permutation
 
             do
             {
-                Console.Write($"Enter {requiredArrLength} integers separated by spaces: ");
+                //Console.Write($"Enter {requiredArrLength} integers separated by spaces: ");
 
                 try
                 {

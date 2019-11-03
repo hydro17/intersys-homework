@@ -13,7 +13,8 @@ namespace ReverseArray
             int[] arrOfInt = GetArrayOfIntegers(requiredArrLength);
 
             Array.Reverse(arrOfInt);
-            Console.WriteLine("Reversed integers (used built-in Array.Reverse()): " + String.Join(" ", arrOfInt));
+            Console.WriteLine(String.Join(" ", arrOfInt));
+            //Console.WriteLine("Reversed integers: " + String.Join(" ", arrOfInt));
         }
 
         private static int[] GetArrayOfIntegers(int requiredArrLength)
@@ -23,7 +24,7 @@ namespace ReverseArray
 
             do
             {
-                Console.Write($"Enter {requiredArrLength} integers separated by spaces: ");
+                //Console.Write($"Enter {requiredArrLength} integers separated by spaces: ");
 
                 try
                 {
@@ -65,7 +66,7 @@ namespace ReverseArray
 
             do
             {
-                Console.Write("Enter array length: ");
+                //Console.Write("Enter array length: ");
                 isInteger = int.TryParse(Console.ReadLine(), out arrLength);
                 if (!isInteger)
                 {

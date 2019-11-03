@@ -12,7 +12,8 @@ namespace CommonDigit
 
             int[] arrOfInt = GetArrayOfIntegers(requiredArrLength);
 
-            Console.WriteLine($"Most occuring digit is {GetMostOccuringDigit(arrOfInt)}");
+            Console.WriteLine(GetMostOccuringDigit(arrOfInt));
+            //Console.WriteLine($"Most occuring digit is {GetMostOccuringDigit(arrOfInt)}");
         }
 
         private static int GetMostOccuringDigit(int[] arrOfInt)
@@ -56,7 +57,7 @@ namespace CommonDigit
 
             do
             {
-                Console.Write($"Enter {requiredArrLength} integers separated by spaces: ");
+                //Console.Write($"Enter {requiredArrLength} integers separated by spaces: ");
 
                 try
                 {
@@ -106,7 +107,7 @@ namespace CommonDigit
             {
                 isInRange = false;
 
-                Console.Write("Enter array length: ");
+                //Console.Write("Enter array length: ");
                 isInteger = int.TryParse(Console.ReadLine(), out arrLength);
 
                 if (!isInteger)
