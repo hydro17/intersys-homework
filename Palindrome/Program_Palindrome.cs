@@ -11,7 +11,8 @@ namespace Palindrome
             string possiblePalindrome = Console.ReadLine();
 
             string onlyLettersPossiblePalindrome = getOnlyLetters(possiblePalindrome);
-            bool isPallindrome = IsPallindrome(onlyLettersPossiblePalindrome.ToLower());
+            bool isPallindrome = IsPallindrome(onlyLettersPossiblePalindrome);
+
             Console.WriteLine(isPallindrome ? "YES" : "NO");
         }
 
@@ -23,8 +24,10 @@ namespace Palindrome
             return onlyLetters;
         }
 
-        private static bool IsPallindrome(string possiblePalindrome)
+        private static bool IsPallindrome(string str)
         {
+            string possiblePalindrome = str.ToLower();
+
             for (int i = 0, k = possiblePalindrome.Length - 1; i < k; i++, k--)
             {
                 if (possiblePalindrome[i] != possiblePalindrome[k])
